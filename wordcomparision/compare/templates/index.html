@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<br><br>
+<form enctype="multipart/form-data" action="upload_file" method="POST">
+{% csrf_token %}  
+<div class="form-group">
+
+<div class="container">
+	<div class="card text-center">
+  		<div class="card-header">
+    		Comare Your Documents
+  		</div>
+  		<div class="card-body">
+    		
+  			<div class="container">
+  				<div class="row" align="center">
+
+  					<div class="col">
+	  					<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+	  						<div class="card-header">File1</div>
+	  						<div class="card-body">
+    							<input type="file" class="form-control-file" name="file1">
+	  						</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+	  						<div class="card-header">File2</div>
+	  						<div class="card-body">
+    							<input type="file" class="form-control-file" name="file2">
+	  						</div>
+						</div>
+					</div>
+
+  				</div>
+  			</div>
+
+  			<input class="btn text-white bg-info mb-3" type="submit" value="Compare Files">
+
+  		</div>
+  		<div class="card-footer text-muted">
+    		Word Documents, text files
+  		</div>
+	</div>
+</div>
+
+
+
+</div>
+</form>
+
+{% endblock %}

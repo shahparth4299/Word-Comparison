@@ -1,0 +1,38 @@
+<style>
+	body, html {
+    height: 100%;
+    width: 100%;
+}
+</style>
+{% extends 'base.html' %}	
+{% block  content %}
+<div class="container">
+   <div class="row">
+        <div class="col-md-6 py-3 px-lg-5 border bg-light">
+        	<div class="row">
+	 			<div class="col-md-12 text-white bg-dark" align="center">
+	 				<h1>File1</h1>
+	 			</div>
+ 			</div>
+ 			<br>
+        	<p class="lead">
+            	{{file1_changes | safe}}
+        	</p>
+        </div>
+        
+        <div class="col-md-6 py-3 px-lg-5 border bg-light">
+        	<div class="row">
+	 			<div class="col-md-12 text-white bg-dark" align="center">
+	 				<h1>File2</h1>
+	 			</div>
+ 			</div>
+ 			<br>
+        	<p class="lead">
+            	{{file2_changes | safe}}
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
