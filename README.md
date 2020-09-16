@@ -7,7 +7,7 @@ File Selection Page
 <a href="url"><img src="https://github.com/shahparth4299/Word-Comparison/blob/master/wordcomparison/output/home.png" align="center" height="350" width="550" ></a>
 <br>
 
-Two Word Document Comparison Output
+Output after comparing two word documents
 
 <a href="url"><img src="https://github.com/shahparth4299/Word-Comparison/blob/master/wordcomparison/output/comparison.png" align="center" height="350" width="550" ></a>
 <br>
